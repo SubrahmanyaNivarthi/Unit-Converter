@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f0f448;
+    color: #2c3e50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 1.5rem;
+    color: #34495e;
+}
+
+label, select, input, button, p {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+select, input {
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #7f8c8d;
+    color: white;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #95a5a6;
+}
+
+p {
+    margin: 1rem;
+    font-weight: bold;
+}

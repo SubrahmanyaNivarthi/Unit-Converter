@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Unit Converter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Unit Converter</h1>
+
+    <label for="conversionType">Select Category:</label>
+    <select id="conversionType">
+      <option value="length">Length</option>
+      <option value="weight">Weight</option>
+      <option value="data">Data</option>
+      <option value="bmi">BMI</option>
+    </select>
+
+    <div id="converterSection">
+      <input type="number" id="inputValue" placeholder="Enter value" />
+      <select id="fromUnit"></select>
+      <select id="toUnit"></select>
+      <button onclick="convert()">Convert</button>
+      <p id="result"></p>
+    </div>
+
+    <div id="bmiSection" style="display: none;">
+      <input type="number" id="bmiHeight" placeholder="Height (meters)" />
+      <input type="number" id="bmiWeight" placeholder="Weight (kg)" />
+      <button onclick="calculateBMI()">Calculate BMI</button>
+      <p id="bmiResult"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
