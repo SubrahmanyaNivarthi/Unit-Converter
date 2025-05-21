@@ -1,9 +1,4 @@
-
-console.log("✅ script.js is loaded");
-
 const conversionType = document.getElementById("conversionType");
-console.log("conversionType element:", conversionType);
-
 const fromUnit = document.getElementById("fromUnit");
 const toUnit = document.getElementById("toUnit");
 const inputValue = document.getElementById("inputValue");
@@ -15,7 +10,6 @@ const bmiHeight = document.getElementById("bmiHeight");
 const bmiWeight = document.getElementById("bmiWeight");
 const bmiResult = document.getElementById("bmiResult");
 
-// Conversion data
 const units = {
   length: {
     meter: 1,
@@ -38,7 +32,6 @@ const units = {
   }
 };
 
-// Load units based on category
 function loadUnits(category) {
   fromUnit.innerHTML = "";
   toUnit.innerHTML = "";
@@ -51,7 +44,6 @@ function loadUnits(category) {
   });
 }
 
-// Conversion logic
 function convert() {
   const category = conversionType.value;
   const from = fromUnit.value;
@@ -69,7 +61,6 @@ function convert() {
   result.textContent = `${value} ${from} = ${convertedValue.toFixed(4)} ${to}`;
 }
 
-// BMI Logic
 function calculateBMI() {
   const height = parseFloat(bmiHeight.value) / 100; // cm to m
   const weight = parseFloat(bmiWeight.value);
@@ -107,7 +98,6 @@ conversionType.addEventListener("change", () => {
   inputValue.value = "";
 });
 
-// Initialize default units
 window.onload = () => {
   loadUnits("length");
 };
